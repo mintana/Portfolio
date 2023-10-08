@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    /* color: white; */
+    font-family:"Proxima N W01 Reg";
+}
+
+
+header{
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    padding-left: 10px;
+    font-family:"Proxima N W01 Reg";
+    color: white;
+    padding-top: 5px;
+}
+
+header h3{
+    float:left;
+}
+    
+.navbar{
+    word-spacing: 15px;
+    justify-content: space-between;
+    float:right;
+   
+    padding-right: 20px;
+    color: rgb(255, 255, 255);
+}
+.nav:hover{
+    /* background-color: #5D4D5B; */
+    position: relative;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    /* padding: 5px; */
+      &:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #5D4D5B;
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px rgb(202, 202, 194);
+        transform: scale(0);
+        opacity: 0;
+        transition: .3s;
+        z-index: -1;
+      }
+      &:hover {
+        color: #fff;
+        &:before {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+        &:after {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+      }
+}
+
+.nav:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+ }
+ .nav:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+ }
+
+#intro{
+    height: 521px;
+	  width: 100%;
+    padding-top: 30px;
+    background-image:url(images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    align-self: center;
+    align-content: center; 
+    display: grid;
+    place-items: center;
+    display: flex;
+    color: white;
+    
+}
+
+.rotate{
+    float: left;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    align-items:center;
+    /* min-height: 100vh; */
+    letter-spacing: 10px;
+    height: 100%;
+    padding-left: 10px;
+    margin-right: -20px;
+    writing-mode:vertical-rl; 
+    font-size: 200%;
+    /* font-family:"Proxima N W01 Reg"; */
+}
+.download{
+  background-color: #AD83A4;
+  color: #fff;
+  font-size: 20px;
+  box-shadow: none;
+  padding: 8px 30px;
+  /* border: none; */
+  border-radius: 4px;
+  cursor: pointer;
+  border-color:#AD83A4;
+}
+table{
+    padding-left: 120px;
+    width:1000px;
+    height:120px;
+    text-align: justify;
+    float:left;
+    align-items: center;
+    align-content: center;
+    place-items: center;
+    place-self: center;
+    padding-top:20px;
+}
+
+.intro,img{
+    float:left;
+    height:300px;
+    /* align-content: center; */
+    
+}
+.myself{
+    float:right;
+    /* padding-left: 100px;  */
+    text-align: left;
+}
+.myintro{
+    font-size: 20px;
+}
+#about{
+    height: 521px;
+	  width: 100%;
+    padding-top: 20px;
+    background-color:#8F8178;
+    align-self: center;
+    align-content: center; 
+    display: grid;
+    place-items: center;
+    display: flex;
+    color: white;
+}
+
+strong{
+    color:#51354e;
+}
+
+.about_me{
+    width:1100px;
+    height: 10px;
+    line-height: 1.5;
+    padding-left: 70px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 18px;
+    /* cellspacing:20px; */
+}
+.td{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.anim-bg {
+    padding-left: 10px;
+    -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+            animation: 1.5s highlight 1.5s 1 normal forwards;
+    background-color: none;
+    background: linear-gradient(90deg, #5D4D5B 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+  }
+  
+  @-webkit-keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
+  
+  @keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
+
+#project{
+    height: 521px;
+	  width: 100%;
+    padding-top: 30px;
+    background-color:#8F8178;
+    color: white;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    place-content: center;
+  }
+
+
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* height: 400px; */
+  }
+  .item2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  
+#contact{
+    height: 521px;
+	  width: 100%;
+    padding-top: 20px;
+    background-color:#8F8178;
+    align-self: center;
+    align-content: center; 
+    display: grid;
+    place-items: center;
+    display: flex;
+    color: white;
+    
+}
+
+hr{
+  border:none;
+  border-left:3px solid #5D4D5B;
+  height:450px;
+  width:5px;      
+}
+
+.links{
+  float:left;
+  padding-right: 10px;
+  padding-left: 100px;
+  width:350px;
+}
+.links h1{
+  font-size: 53px;
+  padding-top: 100px;
+}
+#social-logo{
+  height: 20px;
+  /* padding-right: 20px; */
+  
+}
+.contact-text{
+  font-size: 18px;
+  padding: auto;
+}
+.con-info{
+  display: flex; 
+  padding-top: 3px;
+}
+.contact-text{
+  font-size: 18px;
+  padding-left: 10px;
+  /* padding-top: 8px; */
+}
+.social{
+  padding-top: 50px;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+.form{
+  float: right;
+  padding-left: 10px;
+  padding-right: 80px;
+}
+.form-t{
+  float:right;
+  padding-right: 10px;
+  padding-left: 10px;
+  width:500px;
+}
+#subject{
+  height: 100px;
+  width: 500px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+#mail{
+  width: 498px;
+  height: 30px;
+  padding-left: 10px;
+}
+#name{
+  width: 230px;
+  justify-content: space-between;
+  padding-left: 10px;
+  height: 30px;
+}
+.form-text{
+  letter-spacing: 1px;
+}
+.submit{
+  background-color: #5D4D5B;
+  border-color: #AD83A4;
+  color: #fff;
+  font-size: 20px;
+  box-shadow: none;
+  padding: 10px 50px;
+  border-radius: 4px;
+  cursor: pointer;
+}
